@@ -1,0 +1,2 @@
+Dependencies for Project 'ARM Program 1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\ARM Signed Overflow.s)(0x52A059A1)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\ARM" --list "ARM Signed Overflow.lst" --xref -o "ARM Signed Overflow.o" --depend "ARM Signed Overflow.d")

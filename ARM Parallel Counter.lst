@@ -1,0 +1,58 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             ArmExample, CODE
+    2 00000000         
+    3 00000000         ENTRY
+    4 00000000 E3A004AB        MOV              r0, #0xAB000000
+    5 00000004 E3A012FF        MOV              r1, #0xF000000F
+    6 00000008 E3A0233F        MOV              r2, #0xFC000000
+    7 0000000C E0204001        EOR              r4, r0, r1
+    8 00000010 E0006001        AND              r6, r0, r1
+    9 00000014 E0855006        ADD              r5, r5, r6
+   10 00000018 E0046002        AND              r6, r4, r2
+   11 0000001C E0244002        EOR              r4, r4, r2
+   12 00000020 E0855006        ADD              r5, r5, r6
+   13 00000024         
+   14 00000024 EAFFFFFE 
+                       STOP    B                STOP
+                       
+Command Line: --debug --xref --apcs=interwork --depend="ARM Parallel Counter.d"
+ -o"ARM Parallel Counter.o" -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\INC\ARM -
+-predefine="__EVAL SETA 1" --list=ARM Parallel Counter.lst "ARM Parallel Counte
+r.s"
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ArmExample 00000000
+
+Symbol: ArmExample
+   Definitions
+      At line 1 in file ARM
+   Uses
+      None
+Comment: ArmExample unused
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 3 in file ARM
+   Uses
+      None
+Comment: ENTRY unused
+STOP 00000024
+
+Symbol: STOP
+   Definitions
+      At line 14 in file ARM
+   Uses
+      At line 14 in file ARM
+Comment: STOP used once
+3 symbols
+327 symbols in table

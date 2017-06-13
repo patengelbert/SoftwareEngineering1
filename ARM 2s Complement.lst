@@ -1,0 +1,42 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             ArmExample, CODE
+    2 00000000         
+    3 00000000                 ENTRY
+    4 00000000 E3E01002        MOV              r1, #-&3
+    5 00000004         
+    6 00000004 EAFFFFFE 
+                       STOP    B                STOP
+    7 00000008         
+    8 00000008                 END
+Command Line: --debug --xref --apcs=interwork --depend="ARM 2s Complement.d" -o
+"ARM 2s Complement.o" -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\INC\ARM --prede
+fine="__EVAL SETA 1" --list=ARM 2s Complement.lst "ARM 2s Complement.s"
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ArmExample 00000000
+
+Symbol: ArmExample
+   Definitions
+      At line 1 in file ARM
+   Uses
+      None
+Comment: ArmExample unused
+STOP 00000004
+
+Symbol: STOP
+   Definitions
+      At line 6 in file ARM
+   Uses
+      At line 6 in file ARM
+Comment: STOP used once
+2 symbols
+326 symbols in table
